@@ -33,7 +33,7 @@ namespace StrawberryShake
             _intSerializer = serializerResolver.Get("Int");
         }
 
-        protected override IOnPublishDocument ParserData(JsonElement data)
+        protected override IOnPublishDocument ParseData(JsonElement data)
         {
             return new OnPublishDocument1
             (

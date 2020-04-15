@@ -25,7 +25,7 @@ namespace StrawberryShake
             _stringSerializer = serializerResolver.Get("String");
         }
 
-        protected override IMarkClientPublished ParserData(JsonElement data)
+        protected override IMarkClientPublished ParseData(JsonElement data)
         {
             return new MarkClientPublished1
             (

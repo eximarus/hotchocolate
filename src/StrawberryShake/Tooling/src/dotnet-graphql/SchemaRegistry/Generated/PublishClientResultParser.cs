@@ -25,7 +25,7 @@ namespace StrawberryShake
             _stringSerializer = serializerResolver.Get("String");
         }
 
-        protected override IPublishClient ParserData(JsonElement data)
+        protected override IPublishClient ParseData(JsonElement data)
         {
             return new PublishClient1
             (
