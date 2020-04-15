@@ -6,13 +6,13 @@ namespace HotChocolate.Types
     {
         private const int _maxTypeDepth = 6;
 
-        [Obsolete("Use Print")]
-        public static string Visualize(this IType type) => Print(type);
-
         public static string Print(this IType type)
         {
             return Print(type, 0);
         }
+
+        [Obsolete("Use Print")]
+        public static string Visualize(this IType type) => Print(type);
 
         private static string Print(IType type, int count)
         {
